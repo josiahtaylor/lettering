@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:macro name="sign" params="prefix">
+  <link name="${prefix}_sign">
+    <visual>
+      <geometry>
+        <mesh filename="package://lettering_config/meshes/signs/${prefix}.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://lettering_config/meshes/collision/${prefix}.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${prefix}_joint_1" type="fixed">
+    <parent link="${prefix}_sign"/>
+    <child link="${prefix}_letters"/>
+  </joint>
+
+  <link name="${prefix}_letters">
+    <visual>
+      <geometry>
+        <mesh filename="package://lettering_config/meshes/letters/${prefix}.stl" />
+      </geometry>
+    </visual>
+  </link>
+</xacro:macro>
+</robot>
