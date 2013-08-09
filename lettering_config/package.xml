@@ -1,0 +1,13 @@
+<package>
+  <name>lettering_config</name>
+  <version>1.0.0</version>
+  <description>contains signs with the letters "ROS-industrial" for my capstone urdf project</description>
+  <maintainer email="josiahwtaylor@gmail.com">Josiah Taylor</maintainer>
+  <license>BSD</license>
+  <url type="website">http://ros.org/wiki/industrial_core</url>
+  <author email="josiahwtaylor@gmail.com">Josiah Taylor</author>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
