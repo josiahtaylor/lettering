@@ -4,7 +4,7 @@
   <link name="${prefix}_sign">
     <visual>
       <geometry>
-        <mesh filename="package://lettering_config/meshes/signs/${prefix}.stl"/>
+        <mesh filename="package://lettering_config/meshes/signs/${prefix}.STL"/>
       </geometry>
       <material>
         <color rgba="0 0 .8 1"/>
@@ -12,7 +12,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://lettering_config/meshes/collision/${prefix}.stl" />
+        <mesh filename="package://lettering_config/meshes/collision/${prefix}.STL" />
       </geometry>
       <material>
         <color rgba="1 1 1 1"/>
@@ -28,7 +28,7 @@
   <link name="${prefix}_letters">
     <visual>
       <geometry>
-        <mesh filename="package://lettering_config/meshes/letters/${prefix}.stl" />
+        <mesh filename="package://lettering_config/meshes/letters/${prefix}.STL" />
       </geometry>
       <material>
         <color rgba="1 1 1 1"/>
