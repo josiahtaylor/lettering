@@ -6,7 +6,7 @@
       <geometry>
         <mesh filename="package://lettering_config/meshes/signs/${prefix}.STL"/>
       </geometry>
-      <material>
+      <material name="blue">
         <color rgba="0 0 .8 1"/>
       </material>
     </visual>
@@ -14,7 +14,7 @@
       <geometry>
         <mesh filename="package://lettering_config/meshes/collision/${prefix}.STL" />
       </geometry>
-      <material>
+      <material name="white">
         <color rgba="1 1 1 1"/>
       </material>
     </collision>
@@ -30,9 +30,7 @@
       <geometry>
         <mesh filename="package://lettering_config/meshes/letters/${prefix}.STL" />
       </geometry>
-      <material>
-        <color rgba="1 1 1 1"/>
-      </material>
+      <material name="white"/>
     </visual>
   </link>
 </xacro:macro>
